@@ -7,18 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DD08BFC2B5AB79500397A46 /* PhamPhuongNamNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08BFB2B5AB79500397A46 /* PhamPhuongNamNotesApp.swift */; };
-		3DD08BFE2B5AB79500397A46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08BFD2B5AB79500397A46 /* ContentView.swift */; };
+		3D347F282B5CD89C0040B056 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3D347F272B5CD89C0040B056 /* FirebaseFirestore */; };
+		3D347F2A2B5CD89C0040B056 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D347F292B5CD89C0040B056 /* FirebaseFirestoreSwift */; };
+		3D347F2D2B5CEC7A0040B056 /* LoginedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F2C2B5CEC7A0040B056 /* LoginedUseCase.swift */; };
+		3D347F2F2B5CECFC0040B056 /* LoginedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F2E2B5CECFC0040B056 /* LoginedViewModel.swift */; };
+		3D347F322B5CED6F0040B056 /* PNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F312B5CED6F0040B056 /* PNButton.swift */; };
+		3D347F342B5CEE030040B056 /* LoginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F332B5CEE030040B056 /* LoginedView.swift */; };
+		3D347F362B5CF0F00040B056 /* PNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F352B5CF0F00040B056 /* PNError.swift */; };
+		3D347F392B5CFE570040B056 /* AddNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F382B5CFE570040B056 /* AddNoteUseCase.swift */; };
+		3D347F3B2B5CFE750040B056 /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F3A2B5CFE750040B056 /* AddNoteViewModel.swift */; };
+		3D347F3D2B5CFE8D0040B056 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D347F3C2B5CFE8D0040B056 /* AddNoteView.swift */; };
+		3D791FFA2B5D17BC0047EAF3 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791FF92B5D17BC0047EAF3 /* MainModel.swift */; };
 		3DD08C002B5AB79800397A46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD08BFF2B5AB79800397A46 /* Assets.xcassets */; };
 		3DD08C032B5AB79800397A46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD08C022B5AB79800397A46 /* Preview Assets.xcassets */; };
+		3DD08C1B2B5AB7F000397A46 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD08C1A2B5AB7F000397A46 /* Swinject */; };
+		3DD08C3F2B5AB98E00397A46 /* SwinjectDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C262B5AB98D00397A46 /* SwinjectDI.swift */; };
+		3DD08C402B5AB98E00397A46 /* PhamPhuongNamNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C282B5AB98D00397A46 /* PhamPhuongNamNotesApp.swift */; };
+		3DD08C412B5AB98E00397A46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C292B5AB98D00397A46 /* AppDelegate.swift */; };
+		3DD08C422B5AB98E00397A46 /* NoteNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C2D2B5AB98D00397A46 /* NoteNetwork.swift */; };
+		3DD08C432B5AB98E00397A46 /* UserLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C2F2B5AB98D00397A46 /* UserLocal.swift */; };
+		3DD08C442B5AB98E00397A46 /* UserNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C312B5AB98D00397A46 /* UserNotes.swift */; };
+		3DD08C452B5AB98E00397A46 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C332B5AB98D00397A46 /* UserRepository.swift */; };
+		3DD08C462B5AB98E00397A46 /* NotesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C342B5AB98D00397A46 /* NotesRepository.swift */; };
+		3DD08C472B5AB98E00397A46 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C372B5AB98E00397A46 /* MainViewModel.swift */; };
+		3DD08C482B5AB98E00397A46 /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C382B5AB98E00397A46 /* MainUseCase.swift */; };
+		3DD08C492B5AB98E00397A46 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C392B5AB98E00397A46 /* MainView.swift */; };
+		3DD08C4A2B5AB98E00397A46 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C3B2B5AB98E00397A46 /* LoginView.swift */; };
+		3DD08C4B2B5AB98E00397A46 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C3D2B5AB98E00397A46 /* KeyChainManager.swift */; };
+		3DD08C4C2B5AB98E00397A46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DD08C3E2B5AB98E00397A46 /* GoogleService-Info.plist */; };
+		3DD08C4E2B5ABC4000397A46 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C4D2B5ABC4000397A46 /* LoginUseCase.swift */; };
+		3DD08C502B5ABCAD00397A46 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C4F2B5ABCAD00397A46 /* LoginViewModel.swift */; };
+		3DD08C522B5AC1C300397A46 /* PNState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08C512B5AC1C300397A46 /* PNState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D347F2C2B5CEC7A0040B056 /* LoginedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginedUseCase.swift; sourceTree = "<group>"; };
+		3D347F2E2B5CECFC0040B056 /* LoginedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginedViewModel.swift; sourceTree = "<group>"; };
+		3D347F312B5CED6F0040B056 /* PNButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNButton.swift; sourceTree = "<group>"; };
+		3D347F332B5CEE030040B056 /* LoginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginedView.swift; sourceTree = "<group>"; };
+		3D347F352B5CF0F00040B056 /* PNError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNError.swift; sourceTree = "<group>"; };
+		3D347F382B5CFE570040B056 /* AddNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteUseCase.swift; sourceTree = "<group>"; };
+		3D347F3A2B5CFE750040B056 /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		3D347F3C2B5CFE8D0040B056 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		3D791FF92B5D17BC0047EAF3 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		3DD08BF82B5AB79500397A46 /* PhamPhuongNamNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhamPhuongNamNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DD08BFB2B5AB79500397A46 /* PhamPhuongNamNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhamPhuongNamNotesApp.swift; sourceTree = "<group>"; };
-		3DD08BFD2B5AB79500397A46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DD08BFF2B5AB79800397A46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD08C022B5AB79800397A46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DD08C262B5AB98D00397A46 /* SwinjectDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectDI.swift; sourceTree = "<group>"; };
+		3DD08C282B5AB98D00397A46 /* PhamPhuongNamNotesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhamPhuongNamNotesApp.swift; sourceTree = "<group>"; };
+		3DD08C292B5AB98D00397A46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DD08C2D2B5AB98D00397A46 /* NoteNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteNetwork.swift; sourceTree = "<group>"; };
+		3DD08C2F2B5AB98D00397A46 /* UserLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocal.swift; sourceTree = "<group>"; };
+		3DD08C312B5AB98D00397A46 /* UserNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotes.swift; sourceTree = "<group>"; };
+		3DD08C332B5AB98D00397A46 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		3DD08C342B5AB98D00397A46 /* NotesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesRepository.swift; sourceTree = "<group>"; };
+		3DD08C372B5AB98E00397A46 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3DD08C382B5AB98E00397A46 /* MainUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
+		3DD08C392B5AB98E00397A46 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3DD08C3B2B5AB98E00397A46 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3DD08C3D2B5AB98E00397A46 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		3DD08C3E2B5AB98E00397A46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DD08C4D2B5ABC4000397A46 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		3DD08C4F2B5ABCAD00397A46 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3DD08C512B5AC1C300397A46 /* PNState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +77,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD08C1B2B5AB7F000397A46 /* Swinject in Frameworks */,
+				3D347F282B5CD89C0040B056 /* FirebaseFirestore in Frameworks */,
+				3D347F2A2B5CD89C0040B056 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D347F2B2B5CEC510040B056 /* Logined */ = {
+			isa = PBXGroup;
+			children = (
+				3D347F332B5CEE030040B056 /* LoginedView.swift */,
+				3D347F2E2B5CECFC0040B056 /* LoginedViewModel.swift */,
+				3D347F2C2B5CEC7A0040B056 /* LoginedUseCase.swift */,
+			);
+			path = Logined;
+			sourceTree = "<group>";
+		};
+		3D347F302B5CED600040B056 /* SharedView */ = {
+			isa = PBXGroup;
+			children = (
+				3D347F312B5CED6F0040B056 /* PNButton.swift */,
+			);
+			path = SharedView;
+			sourceTree = "<group>";
+		};
+		3D347F372B5CFE400040B056 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				3D347F3C2B5CFE8D0040B056 /* AddNoteView.swift */,
+				3D347F3A2B5CFE750040B056 /* AddNoteViewModel.swift */,
+				3D347F382B5CFE570040B056 /* AddNoteUseCase.swift */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
 		3DD08BEF2B5AB79500397A46 = {
 			isa = PBXGroup;
 			children = (
 				3DD08BFA2B5AB79500397A46 /* PhamPhuongNamNotes */,
 				3DD08BF92B5AB79500397A46 /* Products */,
+				3DD08C142B5AB7DF00397A46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +134,13 @@
 		3DD08BFA2B5AB79500397A46 /* PhamPhuongNamNotes */ = {
 			isa = PBXGroup;
 			children = (
-				3DD08BFB2B5AB79500397A46 /* PhamPhuongNamNotesApp.swift */,
-				3DD08BFD2B5AB79500397A46 /* ContentView.swift */,
+				3DD08C3E2B5AB98E00397A46 /* GoogleService-Info.plist */,
+				3DD08C272B5AB98D00397A46 /* Application */,
+				3DD08C252B5AB98D00397A46 /* DI */,
+				3DD08C2A2B5AB98D00397A46 /* Data */,
+				3DD08C3C2B5AB98E00397A46 /* Managers */,
+				3D347F302B5CED600040B056 /* SharedView */,
+				3DD08C352B5AB98E00397A46 /* Pages */,
 				3DD08BFF2B5AB79800397A46 /* Assets.xcassets */,
 				3DD08C012B5AB79800397A46 /* Preview Content */,
 			);
@@ -65,6 +153,124 @@
 				3DD08C022B5AB79800397A46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DD08C142B5AB7DF00397A46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DD08C252B5AB98D00397A46 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C262B5AB98D00397A46 /* SwinjectDI.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		3DD08C272B5AB98D00397A46 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C282B5AB98D00397A46 /* PhamPhuongNamNotesApp.swift */,
+				3DD08C292B5AB98D00397A46 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3DD08C2A2B5AB98D00397A46 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C2B2B5AB98D00397A46 /* Database */,
+				3DD08C322B5AB98D00397A46 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3DD08C2B2B5AB98D00397A46 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C2C2B5AB98D00397A46 /* Network */,
+				3DD08C2E2B5AB98D00397A46 /* Local */,
+				3DD08C302B5AB98D00397A46 /* Domain */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3DD08C2C2B5AB98D00397A46 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C2D2B5AB98D00397A46 /* NoteNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3DD08C2E2B5AB98D00397A46 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C2F2B5AB98D00397A46 /* UserLocal.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3DD08C302B5AB98D00397A46 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C312B5AB98D00397A46 /* UserNotes.swift */,
+				3DD08C512B5AC1C300397A46 /* PNState.swift */,
+				3D347F352B5CF0F00040B056 /* PNError.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3DD08C322B5AB98D00397A46 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C332B5AB98D00397A46 /* UserRepository.swift */,
+				3DD08C342B5AB98D00397A46 /* NotesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3DD08C352B5AB98E00397A46 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3D347F372B5CFE400040B056 /* AddNote */,
+				3D347F2B2B5CEC510040B056 /* Logined */,
+				3DD08C362B5AB98E00397A46 /* Main */,
+				3DD08C3A2B5AB98E00397A46 /* Login */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		3DD08C362B5AB98E00397A46 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C392B5AB98E00397A46 /* MainView.swift */,
+				3DD08C372B5AB98E00397A46 /* MainViewModel.swift */,
+				3DD08C382B5AB98E00397A46 /* MainUseCase.swift */,
+				3D791FF92B5D17BC0047EAF3 /* MainModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3DD08C3A2B5AB98E00397A46 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C3B2B5AB98E00397A46 /* LoginView.swift */,
+				3DD08C4F2B5ABCAD00397A46 /* LoginViewModel.swift */,
+				3DD08C4D2B5ABC4000397A46 /* LoginUseCase.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3DD08C3C2B5AB98E00397A46 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3DD08C3D2B5AB98E00397A46 /* KeyChainManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +289,11 @@
 			dependencies = (
 			);
 			name = PhamPhuongNamNotes;
+			packageProductDependencies = (
+				3DD08C1A2B5AB7F000397A46 /* Swinject */,
+				3D347F272B5CD89C0040B056 /* FirebaseFirestore */,
+				3D347F292B5CD89C0040B056 /* FirebaseFirestoreSwift */,
+			);
 			productName = PhamPhuongNamNotes;
 			productReference = 3DD08BF82B5AB79500397A46 /* PhamPhuongNamNotes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +322,11 @@
 				Base,
 			);
 			mainGroup = 3DD08BEF2B5AB79500397A46;
+			packageReferences = (
+				3DD08C092B5AB7D000397A46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3DD08C192B5AB7F000397A46 /* XCRemoteSwiftPackageReference "Swinject" */,
+				3DD08C1C2B5AB80200397A46 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+			);
 			productRefGroup = 3DD08BF92B5AB79500397A46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +343,7 @@
 			files = (
 				3DD08C032B5AB79800397A46 /* Preview Assets.xcassets in Resources */,
 				3DD08C002B5AB79800397A46 /* Assets.xcassets in Resources */,
+				3DD08C4C2B5AB98E00397A46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +354,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD08BFE2B5AB79500397A46 /* ContentView.swift in Sources */,
-				3DD08BFC2B5AB79500397A46 /* PhamPhuongNamNotesApp.swift in Sources */,
+				3DD08C432B5AB98E00397A46 /* UserLocal.swift in Sources */,
+				3DD08C492B5AB98E00397A46 /* MainView.swift in Sources */,
+				3D347F3B2B5CFE750040B056 /* AddNoteViewModel.swift in Sources */,
+				3DD08C462B5AB98E00397A46 /* NotesRepository.swift in Sources */,
+				3DD08C482B5AB98E00397A46 /* MainUseCase.swift in Sources */,
+				3D791FFA2B5D17BC0047EAF3 /* MainModel.swift in Sources */,
+				3DD08C452B5AB98E00397A46 /* UserRepository.swift in Sources */,
+				3DD08C442B5AB98E00397A46 /* UserNotes.swift in Sources */,
+				3D347F362B5CF0F00040B056 /* PNError.swift in Sources */,
+				3D347F392B5CFE570040B056 /* AddNoteUseCase.swift in Sources */,
+				3DD08C4B2B5AB98E00397A46 /* KeyChainManager.swift in Sources */,
+				3D347F3D2B5CFE8D0040B056 /* AddNoteView.swift in Sources */,
+				3DD08C522B5AC1C300397A46 /* PNState.swift in Sources */,
+				3DD08C4A2B5AB98E00397A46 /* LoginView.swift in Sources */,
+				3D347F2F2B5CECFC0040B056 /* LoginedViewModel.swift in Sources */,
+				3DD08C502B5ABCAD00397A46 /* LoginViewModel.swift in Sources */,
+				3D347F2D2B5CEC7A0040B056 /* LoginedUseCase.swift in Sources */,
+				3DD08C422B5AB98E00397A46 /* NoteNetwork.swift in Sources */,
+				3DD08C3F2B5AB98E00397A46 /* SwinjectDI.swift in Sources */,
+				3DD08C412B5AB98E00397A46 /* AppDelegate.swift in Sources */,
+				3DD08C4E2B5ABC4000397A46 /* LoginUseCase.swift in Sources */,
+				3DD08C402B5AB98E00397A46 /* PhamPhuongNamNotesApp.swift in Sources */,
+				3D347F342B5CEE030040B056 /* LoginedView.swift in Sources */,
+				3DD08C472B5AB98E00397A46 /* MainViewModel.swift in Sources */,
+				3D347F322B5CED6F0040B056 /* PNButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhamPhuongNamNotes/Preview Content\"";
-				DEVELOPMENT_TEAM = 6AY3LGP972;
+				DEVELOPMENT_TEAM = 529P86X2L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhamPhuongNamNotes/Preview Content\"";
-				DEVELOPMENT_TEAM = 6AY3LGP972;
+				DEVELOPMENT_TEAM = 529P86X2L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -344,6 +584,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DD08C092B5AB7D000397A46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+		3DD08C192B5AB7F000397A46 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		3DD08C1C2B5AB80200397A46 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D347F272B5CD89C0040B056 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD08C092B5AB7D000397A46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3D347F292B5CD89C0040B056 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD08C092B5AB7D000397A46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		3DD08C1A2B5AB7F000397A46 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD08C192B5AB7F000397A46 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DD08BF02B5AB79500397A46 /* Project object */;
 }
