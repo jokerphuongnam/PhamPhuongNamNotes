@@ -64,12 +64,4 @@ final class FirebaseNotes: NoteNetwork {
             }
         }
     }
-    
-    private func fetchAllNotesa() {
-        db.collection("NotesApp").document("users").collection("usernames").addSnapshotListener(includeMetadataChanges: true) { snapshot, error in
-            for document in snapshot!.documents {
-                
-            }
-        }
-    }
 }
