@@ -50,6 +50,7 @@ final class KeychainUser: UserLocal {
             do {
                 try self.keychainManager.addKey(self.userKey, value: username)
                 self._isLoginContinuation?.yield(true)
+                continuation.resume()
             } catch {
                 continuation.resume(throwing: error)
             }
@@ -62,6 +63,7 @@ final class KeychainUser: UserLocal {
             do {
                 try self.keychainManager.removeKey(self.userKey)
                 self._isLoginContinuation?.yield(false)
+                continuation.resume()
             } catch {
                 continuation.resume(throwing: error)
             }
