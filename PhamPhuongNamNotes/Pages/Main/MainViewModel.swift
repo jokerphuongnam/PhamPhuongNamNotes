@@ -26,8 +26,16 @@ final class MainViewModel: ObservableObject {
         Task(priority: .background) { [weak self] in
             guard let self else { return }
             await self.loadUsername()
-            await self.checkLogin()
+        }
+        
+        Task(priority: .background) { [weak self] in
+            guard let self else { return }
             await self.loadUserNotes()
+        }
+        
+        Task(priority: .background) { [weak self] in
+            guard let self else { return }
+            await self.checkLogin()
         }
     }
     
