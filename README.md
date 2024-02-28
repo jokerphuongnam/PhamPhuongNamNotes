@@ -4,6 +4,10 @@
 
 Phạm Phương Nam Notes is an application developed using the Swift programming language and SwiftUI SDK. It utilizes FirebaseFirestore for data storage and Swift Package Manager for dependency management.
 
+## Video demo
+
+https://github.com/jokerphuongnam/PhamPhuongNamNotes/assets/44250248/6d5bd141-48a5-4d91-8334-c6ee90d68ad6
+
 ## Features
 
 - **Swift Language:** The application is written in Swift, a powerful and intuitive programming language.
